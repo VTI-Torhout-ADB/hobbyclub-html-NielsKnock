@@ -39,7 +39,7 @@
         <main>
 
             <h2>Stuur ons een bericht</h2>
-            <a>Vul het formulier hieronder in om contact met ons op te nemen. We horen graafg van je!</a>
+            <p>Vul het formulier hieronder in om contact met ons op te nemen. We horen graafg van je!</p>
 
             <form action="">
                 
@@ -47,23 +47,28 @@
                     <table>
                         <tr>
                             <h4>Naam:</h4>
-                            <input name= "naam" type= "text" size="30" required value="Vul je naam in">
+                            <input name= "naam" type= "text" size="30" required placeholder="Vul je naam in">
                         </tr>
                         
                         <tr>
                             <h4>E-mailadres:</h4>
-                            <input name= "email" type= "email" size="30" required >
+                            <input name= "email" type= "email" size="30" required placeholder="Vul je e-mailadres in">
                         </tr>
 
                         <tr>
                             <h4>Bericht:</h4>
-                            <input name= "bericht" type= "text" size="90" >
+                            <textarea rows="3" placeholder="Typ hier je tekst..."></textarea>
 
                         </tr>
 
                         <tr>
-                            <element class="submitButton">Verzend</element>
-                            <element class="resetButton">Reset</element>
+                            <button class="submitButton">
+                                Verzend
+                            </button>
+
+                            <button class="resetButton">
+                                Reset
+                            </button>
                         </tr>
                     </table>
                     
