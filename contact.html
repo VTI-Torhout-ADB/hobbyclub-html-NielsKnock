@@ -36,49 +36,51 @@
 
         </nav>
 
-        <main>
+        <section class="content">
 
             <h2>Stuur ons een bericht</h2>
             <p>Vul het formulier hieronder in om contact met ons op te nemen. We horen graafg van je!</p>
 
-            <form action="">
+            <form action="#" method="post">
                 
-                <label>
-                    <table>
-                        <tr>
-                            <h4>Naam:</h4>
-                            <input name= "naam" type= "text" size="30" required placeholder="Vul je naam in">
-                        </tr>
-                        
-                        <tr>
-                            <h4>E-mailadres:</h4>
-                            <input name= "email" type= "email" size="30" required placeholder="Vul je e-mailadres in">
-                        </tr>
-
-                        <tr>
-                            <h4>Bericht:</h4>
-                            <textarea rows="3" placeholder="Typ hier je tekst..."></textarea>
-
-                        </tr>
-
-                        <tr>
-                            <button class="submitButton">
-                                Verzend
-                            </button>
-
-                            <button class="resetButton">
-                                Reset
-                            </button>
-                        </tr>
-                    </table>
-                    
+                <label for="Naam">
+                    Naam:
                 </label>
 
+                <label>
+                    <input name= "naam" type= "text" size="30" required placeholder="Vul je naam in">
+                </label>
+
+                <label form="email">
+                    E-mailadres:
+                </label>
+
+                <label>
+                    <input name= "email" type= "email" size="30" required placeholder="Vul je e-mailadres in">
+                </label>
+
+                <label for="message">
+                    Bericht:
+                </label>
+
+                <label>
+                    <textarea rows="4" placeholder="Typ hier je tekst..."></textarea>
+                </label>
                 
+                <div class="buttons">
+                    <button class="submitButton" type ="submit">
+                        Verzend
+                    </button>
+
+                    <button class="resetButton" type ="submit">
+                        Reset
+                    </button>
+                </div>
+                    
 
             </form>
 
-        </main>
+        </section>
 
         <footer>
             <h4>© 2025 - Niels Knockaert</h4>
